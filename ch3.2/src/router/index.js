@@ -6,6 +6,8 @@ import DataBindingInputText from '../views/DataBindingInputText.vue';
 import DataBindingInputNumber from '../views/DataBindingInputNumber.vue';
 import DataBindingTextarea from '../views/DataBindingTextarea.vue';
 import DatabindingSelect from '../views/DatabindingSelect.vue';
+import DataBindingCheckbox from '../views/DataBindingCheckbox.vue';
+import DataBindingMultiCheck from '../views/DataBindingMultiCheck.vue';
 
 const routes = [
   {
@@ -50,6 +52,16 @@ const routes = [
     path: '/databindingselect',
     name: 'DatabindingSelect',
     component: DatabindingSelect
+  },
+  {
+    path: '/databindingcheckbox',
+    name: 'DataBindingCheckbox',
+    component: DataBindingCheckbox
+  },
+  {
+    path: '/databindingmulticheck',
+    name: 'DataBindingMultiCheck',
+    component: DataBindingMultiCheck
   }
 ];
 

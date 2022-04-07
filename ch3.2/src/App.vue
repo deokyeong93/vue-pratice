@@ -14,6 +14,10 @@
     |
     <router-link to="/databindingselect">DatabindingSelect</router-link>
     |
+    <router-link to="/databindingcheckbox">DataBindingCheckbox</router-link>
+    |
+    <router-link to="/databindingmulticheck">DataBindingMultiCheck</router-link>
+    |
   </nav>
   <router-view />
 </template>
