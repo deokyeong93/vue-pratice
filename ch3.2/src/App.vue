@@ -12,6 +12,8 @@
     |
     <router-link to="/databindingtextarea">databindingtextarea</router-link>
     |
+    <router-link to="/databindingselect">DatabindingSelect</router-link>
+    |
   </nav>
   <router-view />
 </template>
