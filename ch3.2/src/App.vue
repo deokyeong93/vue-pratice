@@ -18,6 +18,8 @@
     |
     <router-link to="/databindingmulticheck">DataBindingMultiCheck</router-link>
     |
+    <router-link to="/databindingradio">DataBindingRadio</router-link>
+    |
   </nav>
   <router-view />
 </template>
