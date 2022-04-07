@@ -9,6 +9,7 @@ import DatabindingSelect from '../views/DatabindingSelect.vue';
 import DataBindingCheckbox from '../views/DataBindingCheckbox.vue';
 import DataBindingMultiCheck from '../views/DataBindingMultiCheck.vue';
 import DataBindingRadio from '../views/DataBindingRadio.vue';
+import DataBindingButton from '../views/DataBindingButton.vue';
 
 const routes = [
   {
@@ -68,6 +69,11 @@ const routes = [
     path: '/databindingradio',
     name: 'DataBindingRadio',
     component: DataBindingRadio
+  },
+  {
+    path: '/databindingbutton',
+    name: 'DataBindingButton',
+    component: DataBindingButton
   }
 ];
 

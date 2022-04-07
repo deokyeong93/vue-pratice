@@ -20,6 +20,8 @@
     |
     <router-link to="/databindingradio">DataBindingRadio</router-link>
     |
+    <router-link to="/databindingbutton">DataBindingButton</router-link>
+    |
   </nav>
   <router-view />
 </template>
