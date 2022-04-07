@@ -1,13 +1,16 @@
 <template>
-  <div>sample</div>
+  <div>
+    <div>{{ htmlString }}</div>
+    <div v-html="htmlString"></div>
+  </div>
 </template>
 <script>
 export default {
-  name: "sample-",
+  name: "test-binding",
   components: {},
   data() {
     return {
-      sampleDate: "",
+      htmlString: '<span style="color:red;">한국어</span>',
     };
   },
   beforeCreate() {},

@@ -1,13 +1,17 @@
 <template>
-  <div>sample</div>
+  <input
+    type="text"
+    v-model="valueModel"
+    class="input input-bordered w-full max-w-xs text-slate-100"
+  />
 </template>
 <script>
 export default {
-  name: "sample-",
+  name: "input_text",
   components: {},
   data() {
     return {
-      sampleDate: "",
+      valueModel: "한국인 입니다",
     };
   },
   beforeCreate() {},
