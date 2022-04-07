@@ -10,6 +10,8 @@
     |
     <router-link to="/databindinginputnumber">DatabindinutNumber</router-link>
     |
+    <router-link to="/databindingtextarea">databindingtextarea</router-link>
+    |
   </nav>
   <router-view />
 </template>

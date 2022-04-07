@@ -1,17 +1,13 @@
 <template>
-  <input
-    type="number"
-    v-model.number="valueModel"
-    class="input input-bordered w-full max-w-xs"
-  />
+  <textarea v-model="message" class="textarea textarea-info"></textarea>
 </template>
 <script>
 export default {
-  name: "input_number",
+  name: "input_textarea",
   components: {},
   data() {
     return {
-      valueModel: 3,
+      message: "한국인 입니다. 한국어도 할 수 있고 영어도 할 수 있습니다.",
     };
   },
   beforeCreate() {},
