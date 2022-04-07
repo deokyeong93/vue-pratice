@@ -10,6 +10,9 @@ import DataBindingCheckbox from '../views/DataBindingCheckbox.vue';
 import DataBindingMultiCheck from '../views/DataBindingMultiCheck.vue';
 import DataBindingRadio from '../views/DataBindingRadio.vue';
 import DataBindingButton from '../views/DataBindingButton.vue';
+import DataBindingClass from '../views/DataBindingClass.vue';
+import DataBindingClass2 from '../views/DataBindingClass2.vue';
+import DataBindingStyle from '../views/DataBindingStyle.vue';
 
 const routes = [
   {
@@ -74,6 +77,21 @@ const routes = [
     path: '/databindingbutton',
     name: 'DataBindingButton',
     component: DataBindingButton
+  },
+  {
+    path: '/databindingclass',
+    name: 'DataBindingClass',
+    component: DataBindingClass
+  },
+  {
+    path: '/databindingclass2',
+    name: 'DataBindingClass2',
+    component: DataBindingClass2
+  },
+  {
+    path: '/databindingstyle',
+    name: 'DataBindingStyle',
+    component: DataBindingStyle
   }
 ];
 
