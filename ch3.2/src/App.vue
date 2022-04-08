@@ -29,6 +29,10 @@
     <router-link to="/databindingstyle">DataBindingStyle</router-link>
     |
     <router-link to="/databindinglist">DataBindingList</router-link>
+    |
+    <router-link to="/renderingvif">RenderingVif</router-link>
+    |
+    <router-link to="/eventclick">EventClick</router-link>
   </nav>
   <router-view />
 </template>
