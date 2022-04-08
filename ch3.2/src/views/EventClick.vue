@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-  name: "event-click",
+  name: 'event-click',
   components: {},
   data() {
     return {
@@ -33,10 +33,10 @@ export default {
       this.count = count;
     },
     one() {
-      return alert("one");
+      return alert('one');
     },
     two() {
-      return alert("two");
+      return alert('two');
     },
   },
 };
