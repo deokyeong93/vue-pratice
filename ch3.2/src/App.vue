@@ -33,6 +33,8 @@
     <router-link to="/renderingvif">RenderingVif</router-link>
     |
     <router-link to="/eventclick">EventClick</router-link>
+    |
+    <router-link to="/eventchange">EventChange</router-link>
   </nav>
   <router-view />
 </template>

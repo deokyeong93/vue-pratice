@@ -16,12 +16,13 @@ import DataBindingStyle from '../views/DataBindingStyle.vue';
 import DataBindingList from '../views/DataBindingList.vue';
 import RenderingVif from '../views/RenderingVif.vue';
 import EventClick from '../views/EventClick.vue';
+import EventChange from '../views/EventChange.vue';
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
   },
   {
     path: '/about',
@@ -29,93 +30,99 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () =>
+      import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
   },
   {
     path: '/databinding',
     name: 'DataBinding',
-    component: DataBinding
+    component: DataBinding,
   },
   {
     path: '/databindinghtml',
     name: 'DataBindingHtml',
-    component: DataBindingHtml
+    component: DataBindingHtml,
   },
   {
     path: '/databindinginputtext',
     name: 'DataBindingInputText',
-    component: DataBindingInputText
+    component: DataBindingInputText,
   },
   {
     path: '/databindinginputnumber',
     name: 'DataBindingInputNumber',
-    component: DataBindingInputNumber
+    component: DataBindingInputNumber,
   },
   {
     path: '/databindingtextarea',
     name: 'DataBindingTextarea',
-    component: DataBindingTextarea
+    component: DataBindingTextarea,
   },
   {
     path: '/databindingselect',
     name: 'DatabindingSelect',
-    component: DatabindingSelect
+    component: DatabindingSelect,
   },
   {
     path: '/databindingcheckbox',
     name: 'DataBindingCheckbox',
-    component: DataBindingCheckbox
+    component: DataBindingCheckbox,
   },
   {
     path: '/databindingmulticheck',
     name: 'DataBindingMultiCheck',
-    component: DataBindingMultiCheck
+    component: DataBindingMultiCheck,
   },
   {
     path: '/databindingradio',
     name: 'DataBindingRadio',
-    component: DataBindingRadio
+    component: DataBindingRadio,
   },
   {
     path: '/databindingbutton',
     name: 'DataBindingButton',
-    component: DataBindingButton
+    component: DataBindingButton,
   },
   {
     path: '/databindingclass',
     name: 'DataBindingClass',
-    component: DataBindingClass
+    component: DataBindingClass,
   },
   {
     path: '/databindingclass2',
     name: 'DataBindingClass2',
-    component: DataBindingClass2
+    component: DataBindingClass2,
   },
   {
     path: '/databindingstyle',
     name: 'DataBindingStyle',
-    component: DataBindingStyle
+    component: DataBindingStyle,
   },
   {
     path: '/databindinglist',
     name: 'DataBindingList',
-    component: DataBindingList
+    component: DataBindingList,
   },
   {
     path: '/renderingvif',
     name: 'RenderingVif',
-    component: RenderingVif
+    component: RenderingVif,
   },
   {
     path: '/eventclick',
     name: 'EventClick',
-    component: EventClick
-  }
+    component: EventClick,
+  },
+  {
+    path: '/eventchange',
+    name: 'EventChange',
+    component: EventChange,
+  },
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
 });
 
 export default router;
