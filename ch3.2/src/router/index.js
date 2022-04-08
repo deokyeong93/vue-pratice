@@ -17,6 +17,7 @@ import DataBindingList from '../views/DataBindingList.vue';
 import RenderingVif from '../views/RenderingVif.vue';
 import EventClick from '../views/EventClick.vue';
 import EventChange from '../views/EventChange.vue';
+import Watch from '../views/Watch.vue';
 
 const routes = [
   {
@@ -117,6 +118,11 @@ const routes = [
     path: '/eventchange',
     name: 'EventChange',
     component: EventChange,
+  },
+  {
+    path: '/watch',
+    name: 'Watch',
+    component: Watch,
   },
 ];
 

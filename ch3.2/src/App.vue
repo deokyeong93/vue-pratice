@@ -35,6 +35,8 @@
     <router-link to="/eventclick">EventClick</router-link>
     |
     <router-link to="/eventchange">EventChange</router-link>
+    |
+    <router-link to="/watch">Watch</router-link>
   </nav>
   <router-view />
 </template>
