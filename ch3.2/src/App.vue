@@ -28,6 +28,7 @@
     |
     <router-link to="/databindingstyle">DataBindingStyle</router-link>
     |
+    <router-link to="/databindinglist">DataBindingList</router-link>
   </nav>
   <router-view />
 </template>
