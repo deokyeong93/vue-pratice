@@ -22,46 +22,29 @@
 </template>
 <script>
 export default {
-  name: "table_list",
+  name: 'table_list',
   components: {},
   data() {
     return {
-      productList: [
-        {
-          product_name: "호랑이",
-          price: 10000,
-          category: "장난감",
-          delivery_price: 2500,
-        },
-        {
-          product_name: "호랑이",
-          price: 10000,
-          category: "장난감",
-          delivery_price: 2500,
-        },
-        {
-          product_name: "호랑이",
-          price: 10000,
-          category: "장난감",
-          delivery_price: 2500,
-        },
-        {
-          product_name: "호랑이",
-          price: 10000,
-          category: "장난감",
-          delivery_price: 2500,
-        },
-      ],
+      productList: [],
     };
   },
   beforeCreate() {},
-  created() {},
+  created() {
+    this.getList();
+  },
   beforeMount() {},
   mounted() {},
   beforeUpdate() {},
   update() {},
   beforeUnmount() {},
   unmounted() {},
-  methods: {},
+  methods: {
+    async getList() {
+      const url =
+        'https://a511c49d-74c8-46d9-b807-7be8bf9b31e7.mock.pstmn.io/list';
+      this.productList = await this.$api(url, 'get');
+    },
+  },
 };
 </script>
