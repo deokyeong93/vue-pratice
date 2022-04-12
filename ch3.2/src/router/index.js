@@ -20,6 +20,7 @@ import EventChange from "../views/EventChange.vue";
 import Watch from "../views/Watch.vue";
 import BubbleEvent from "../views/BubbleEvent.vue";
 import ChildParent from "../views/ChildParent.vue";
+import CompositionAPI from "../views/CompositionAPI.vue";
 
 const routes = [
   {
@@ -135,6 +136,11 @@ const routes = [
     path: "/childparent",
     name: "ChildParent",
     component: ChildParent,
+  },
+  {
+    path: "/compositionapi",
+    name: "compositionapi",
+    component: CompositionAPI,
   },
 ];
 

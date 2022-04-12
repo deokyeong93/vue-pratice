@@ -41,6 +41,8 @@
     <router-link to="/bubbleevent">BubbleEvent</router-link>
     |
     <router-link to="/childparent">ChildParent</router-link>
+    |
+    <router-link to="/compositionapi">compositionapi</router-link>
   </nav>
   <router-view />
 </template>
