@@ -1,10 +1,12 @@
 <template>
-  <div>sample</div>
+  <PageTitle title='전달하는 값이야'/>
 </template>
 <script>
+import PageTitle from '../components/PageTitle.vue'
+
 export default {
   name: "sample-",
-  components: {},
+  components: {PageTitle},
   data() {
     return {
       sampleDate: "",
