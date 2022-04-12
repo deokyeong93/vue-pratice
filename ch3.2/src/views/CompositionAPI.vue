@@ -3,34 +3,37 @@
     <h2 class="text-4xl">Calculator</h2>
     <div>
       <!-- <input type="text" v-model="state.num1" @keyup="plusNumbers" /> -->
-      <input type="text" v-model="state.num1" />
+      <input type="text" v-model="num1" />
       <span>+</span>
       <!-- <input type="text" v-model="state.num2" @keyup="plusNumbers" /> -->
-      <input type="text" v-model="state.num2" />
+      <input type="text" v-model="num2" />
       <span>=</span>
-      <span>{{ state.result }}</span>
+      <span>{{ result }}</span>
     </div>
   </div>
 </template>
 <script>
-import { computed, reactive } from "vue";
+// import { computed, reactive, toRefs } from 'vue';
+// function plusCalculator() {
+//   let state = reactive({
+//     num1: 0,
+//     num2: 0,
+//     result: computed(() => parseInt(state.num1) + parseInt(state.num2)),
+//   });
+
+//   return toRefs(state);
+// }
+
+import { plusCalculator } from '../common';
+
 export default {
-  name: "calculator-ex",
+  name: 'calculator-export',
   setup() {
-    let state = reactive({
-      num1: 0,
-      num2: 0,
-      result: computed(() => parseInt(state.num1) + parseInt(state.num2)),
-    });
-
-    // function plusNumbers() {
-    //   console.log(state.num1);
-    //   state.result = parseInt(state.num1) + parseInt(state.num2);
-    // }
-
+    let { num1, num2, result } = plusCalculator();
     return {
-      state,
-      // plusNumbers,
+      num1,
+      num2,
+      result,
     };
   },
 };
