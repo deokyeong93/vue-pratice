@@ -1,7 +1,10 @@
 <template>
-  <PageTitle title="전달하는 값이야" />
+  <!-- <PageTitle title="전달하는 값이야" /> -->
   <!-- 이하는 동적인 전달을 해보자 -->
-  <PageTitle :title="title" />
+  <!-- <PageTitle :title="title" /> -->
+  <PageTitle>
+    <template #default> 디스코 팡팡 </template>
+  </PageTitle>
   <ChildComponent ref="first" />
   <ChildComponent2 ref="second" />
   <ChildComponent3 ref="third" />

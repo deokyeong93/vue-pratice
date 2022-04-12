@@ -1,5 +1,6 @@
 <template>
-  <h2 class="text-4xl">{{ title }}</h2>
+  <!-- <h2 class="text-4xl">{{ title }}</h2> -->
+  <h2><slot></slot></h2>
 </template>
 <script>
 export default {
