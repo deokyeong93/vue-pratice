@@ -1,6 +1,5 @@
 <template>
   <h2 class="text-4xl">{{ title }}</h2>
-  <div>{{ numberProps }}</div>
 </template>
 <script>
 export default {
