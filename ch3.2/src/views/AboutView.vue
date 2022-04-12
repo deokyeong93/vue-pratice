@@ -3,14 +3,16 @@
   <!-- 이하는 동적인 전달을 해보자 -->
   <PageTitle :title="title" />
   <ChildComponent ref="first" />
+  <ChildComponent2 ref="second" />
 </template>
 <script>
 import PageTitle from "../components/PageTitle.vue";
 import ChildComponent from "../components/ChildComponent.vue";
+import ChildComponent2 from "../components/ChildComponent2.vue";
 
 export default {
   name: "sample-",
-  components: { PageTitle, ChildComponent },
+  components: { PageTitle, ChildComponent, ChildComponent2 },
   data() {
     return {
       title: "동적으로 전달해보자",
@@ -21,6 +23,7 @@ export default {
   beforeMount() {},
   mounted() {
     this.$refs.first.$refs.btn.click(); // 마운트 시 클릭 이벤트 생성, ref로 직접 dom에 접근
+    this.$refs.second.callFromParent();
   },
   beforeUpdate() {},
   update() {},
