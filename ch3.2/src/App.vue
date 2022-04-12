@@ -37,6 +37,10 @@
     <router-link to="/eventchange">EventChange</router-link>
     |
     <router-link to="/watch">Watch</router-link>
+    |
+    <router-link to="/bubbleevent">BubbleEvent</router-link>
+    |
+    <router-link to="/childparent">ChildParent</router-link>
   </nav>
   <router-view />
 </template>
